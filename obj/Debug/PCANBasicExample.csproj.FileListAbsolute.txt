@@ -1,0 +1,78 @@
+C:\Users\1268241\Desktop\PCAN-Basic API\Samples\C#\bin\Debug\PCANBasicExample.exe
+C:\Users\1268241\Desktop\PCAN-Basic API\Samples\C#\bin\Debug\PCANBasicExample.pdb
+C:\Users\1268241\Desktop\PCAN-Basic API\Samples\C#\obj\Debug\ICDIBasic.Form1.resources
+C:\Users\1268241\Desktop\PCAN-Basic API\Samples\C#\obj\Debug\PCANBasicExample.Properties.Resources.resources
+C:\Users\1268241\Desktop\PCAN-Basic API\Samples\C#\obj\Debug\PCANBasicExample.csproj.GenerateResource.Cache
+C:\Users\1268241\Desktop\PCAN-Basic API\Samples\C#\obj\Debug\PCANBasicExample.exe
+C:\Users\1268241\Desktop\PCAN-Basic API\Samples\C#\obj\Debug\PCANBasicExample.pdb
+C:\Users\Vincent\Desktop\C#\obj\Debug\PCANBasicExample.exe
+C:\Users\Vincent\Desktop\C#\obj\Debug\PCANBasicExample.pdb
+C:\Users\Vincent\Desktop\C#\bin\Debug\PCANBasicExample.exe
+C:\Users\Vincent\Desktop\C#\bin\Debug\PCANBasicExample.pdb
+C:\Users\Vincent\Desktop\C#\obj\Debug\ICDIBasic.Form1.resources
+C:\Users\Vincent\Desktop\C#\obj\Debug\PCANBasicExample.Properties.Resources.resources
+C:\Users\Vincent\Desktop\C#\obj\Debug\PCANBasicExample.csproj.GenerateResource.Cache
+C:\Users\Vincent\Desktop\C#\obj\Debug\PCANBasicExample.Form2.resources
+C:\Users\Vincent\Desktop\C#\obj\Debug\PCANBasicExample.csprojResolveAssemblyReference.cache
+C:\Synchro\Dropbox\Travaux\Automne 2014\Prog High Level\Lab7 CAN\CAN Opener\obj\Debug\ICDIBasic.Form1.resources
+C:\Synchro\Dropbox\Travaux\Automne 2014\Prog High Level\Lab7 CAN\CAN Opener\obj\Debug\PCANBasicExample.Properties.Resources.resources
+C:\Synchro\Dropbox\Travaux\Automne 2014\Prog High Level\Lab7 CAN\CAN Opener\obj\Debug\PCANBasicExample.csproj.GenerateResource.Cache
+C:\Synchro\Dropbox\Travaux\Automne 2014\Prog High Level\Lab7 CAN\CAN Opener\bin\Debug\CAN Opener.exe.config
+C:\Synchro\Dropbox\Travaux\Automne 2014\Prog High Level\Lab7 CAN\CAN Opener\bin\Debug\CAN Opener.exe
+C:\Synchro\Dropbox\Travaux\Automne 2014\Prog High Level\Lab7 CAN\CAN Opener\bin\Debug\CAN Opener.pdb
+C:\Synchro\Dropbox\Travaux\Automne 2014\Prog High Level\Lab7 CAN\CAN Opener\obj\Debug\CAN Opener.exe
+C:\Synchro\Dropbox\Travaux\Automne 2014\Prog High Level\Lab7 CAN\CAN Opener\obj\Debug\CAN Opener.pdb
+C:\Synchro\Dropbox\Travaux\Automne 2014\Prog High Level\Lab7 CAN\CAN Opener\obj\Debug\PCANBasicExample.csprojResolveAssemblyReference.cache
+C:\Synchro\Dropbox\Travaux\Automne 2014\ProjetSession5\Csharp\bin\Debug\CAN Opener.exe.config
+C:\Synchro\Dropbox\Travaux\Automne 2014\ProjetSession5\Csharp\bin\Debug\CAN Opener.exe
+C:\Synchro\Dropbox\Travaux\Automne 2014\ProjetSession5\Csharp\bin\Debug\CAN Opener.pdb
+C:\Synchro\Dropbox\Travaux\Automne 2014\ProjetSession5\Csharp\obj\Debug\ICDIBasic.Form1.resources
+C:\Synchro\Dropbox\Travaux\Automne 2014\ProjetSession5\Csharp\obj\Debug\PCANBasicExample.Properties.Resources.resources
+C:\Synchro\Dropbox\Travaux\Automne 2014\ProjetSession5\Csharp\obj\Debug\PCANBasicExample.csproj.GenerateResource.Cache
+C:\Synchro\Dropbox\Travaux\Automne 2014\ProjetSession5\Csharp\obj\Debug\CAN Opener.exe
+C:\Synchro\Dropbox\Travaux\Automne 2014\ProjetSession5\Csharp\obj\Debug\CAN Opener.pdb
+C:\Synchro\Dropbox\Travaux\Automne 2014\ProjetSession5\Csharp\obj\Debug\PCANBasicExample.csprojResolveAssemblyReference.cache
+C:\Users\1240249\Desktop\Csharp\bin\Debug\CAN Opener.exe.config
+C:\Users\1240249\Desktop\Csharp\obj\Debug\CAN Opener.exe
+C:\Users\1240249\Desktop\Csharp\obj\Debug\CAN Opener.pdb
+C:\Users\1240249\Desktop\Csharp\bin\Debug\CAN Opener.exe
+C:\Users\1240249\Desktop\Csharp\bin\Debug\CAN Opener.pdb
+C:\Users\1240249\Desktop\Csharp\obj\Debug\PCANBasicExample.csprojResolveAssemblyReference.cache
+C:\Users\1240249\Desktop\Csharp\obj\Debug\ICDIBasic.Form1.resources
+C:\Users\1240249\Desktop\Csharp\obj\Debug\PCANBasicExample.Properties.Resources.resources
+C:\Users\1240249\Desktop\Csharp\obj\Debug\PCANBasicExample.csproj.GenerateResource.Cache
+C:\Users\1240249\Desktop\Hicham\bin\Debug\CAN Opener.exe.config
+C:\Users\1240249\Desktop\Hicham\obj\Debug\CAN Opener.exe
+C:\Users\1240249\Desktop\Hicham\obj\Debug\CAN Opener.pdb
+C:\Users\1240249\Desktop\Hicham\bin\Debug\CAN Opener.exe
+C:\Users\1240249\Desktop\Hicham\bin\Debug\CAN Opener.pdb
+C:\Users\1240249\Desktop\Hicham\obj\Debug\PCANBasicExample.csprojResolveAssemblyReference.cache
+C:\Users\1240249\Desktop\Hicham\obj\Debug\ICDIBasic.Form1.resources
+C:\Users\1240249\Desktop\Hicham\obj\Debug\PCANBasicExample.Properties.Resources.resources
+C:\Users\1240249\Desktop\Hicham\obj\Debug\PCANBasicExample.csproj.GenerateResource.Cache
+C:\Synchro\Dropbox\Travaux\Automne 2014\ProjetSession5\Csharp\Programme\bin\Debug\CAN Opener.exe.config
+C:\Synchro\Dropbox\Travaux\Automne 2014\ProjetSession5\Csharp\Programme\bin\Debug\CAN Opener.exe
+C:\Synchro\Dropbox\Travaux\Automne 2014\ProjetSession5\Csharp\Programme\bin\Debug\CAN Opener.pdb
+C:\Synchro\Dropbox\Travaux\Automne 2014\ProjetSession5\Csharp\Programme\obj\Debug\ICDIBasic.Form1.resources
+C:\Synchro\Dropbox\Travaux\Automne 2014\ProjetSession5\Csharp\Programme\obj\Debug\PCANBasicExample.Properties.Resources.resources
+C:\Synchro\Dropbox\Travaux\Automne 2014\ProjetSession5\Csharp\Programme\obj\Debug\PCANBasicExample.csproj.GenerateResource.Cache
+C:\Synchro\Dropbox\Travaux\Automne 2014\ProjetSession5\Csharp\Programme\obj\Debug\CAN Opener.exe
+C:\Synchro\Dropbox\Travaux\Automne 2014\ProjetSession5\Csharp\Programme\obj\Debug\CAN Opener.pdb
+C:\Users\1234334\Desktop\Programme\bin\Debug\CAN Opener.exe.config
+C:\Users\1234334\Desktop\Programme\obj\Debug\CAN Opener.exe
+C:\Users\1234334\Desktop\Programme\obj\Debug\CAN Opener.pdb
+C:\Users\1234334\Desktop\Programme\bin\Debug\CAN Opener.exe
+C:\Users\1234334\Desktop\Programme\bin\Debug\CAN Opener.pdb
+C:\Users\1234334\Desktop\Programme\obj\Debug\ICDIBasic.Form1.resources
+C:\Users\1234334\Desktop\Programme\obj\Debug\PCANBasicExample.Properties.Resources.resources
+C:\Users\1234334\Desktop\Programme\obj\Debug\PCANBasicExample.csproj.GenerateResource.Cache
+C:\TEMP\github\Projet-de-5e-Session\Csharp\Programme\bin\Debug\CAN Opener.exe.config
+C:\TEMP\github\Projet-de-5e-Session\Csharp\Programme\bin\Debug\CAN Opener.exe
+C:\TEMP\github\Projet-de-5e-Session\Csharp\Programme\bin\Debug\CAN Opener.pdb
+C:\TEMP\github\Projet-de-5e-Session\Csharp\Programme\obj\Debug\PCANBasicExample.csprojAssemblyReference.cache
+C:\TEMP\github\Projet-de-5e-Session\Csharp\Programme\obj\Debug\ICDIBasic.Form1.resources
+C:\TEMP\github\Projet-de-5e-Session\Csharp\Programme\obj\Debug\PCANBasicExample.Properties.Resources.resources
+C:\TEMP\github\Projet-de-5e-Session\Csharp\Programme\obj\Debug\PCANBasicExample.csproj.GenerateResource.cache
+C:\TEMP\github\Projet-de-5e-Session\Csharp\Programme\obj\Debug\PCANBasicExample.csproj.CoreCompileInputs.cache
+C:\TEMP\github\Projet-de-5e-Session\Csharp\Programme\obj\Debug\CAN Opener.exe
+C:\TEMP\github\Projet-de-5e-Session\Csharp\Programme\obj\Debug\CAN Opener.pdb
