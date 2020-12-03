@@ -82,40 +82,25 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.EtatProjet = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
-            this.PoidsLabel = new System.Windows.Forms.Label();
             this.Poltergeist = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.CANid = new System.Windows.Forms.Label();
-            this.GhostLabel = new System.Windows.Forms.Label();
-            this.Range = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.GhostLabelDeRéception = new System.Windows.Forms.Label();
-            this.RangedTrame = new System.Windows.Forms.Label();
             this.lblEtatVehicule = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.GhostLabel2 = new System.Windows.Forms.Label();
-            this.lblBattryLevel = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.lblStation = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.lblSpeed = new System.Windows.Forms.Label();
             this.LblPoidBloc = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label23 = new System.Windows.Forms.Label();
             this.lblBlocColor = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.groupBox24 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.VoitureStop = new System.Windows.Forms.Button();
-            this.VoitureStart = new System.Windows.Forms.Button();
-            this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.HeartBeatOUT = new System.Windows.Forms.Button();
-            this.HeartBeatIN = new System.Windows.Forms.Button();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.BoutonStop = new System.Windows.Forms.Button();
+            this.BoutonStart = new System.Windows.Forms.Button();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.Connexion = new System.Windows.Forms.Button();
             this.groupBox27 = new System.Windows.Forms.GroupBox();
@@ -127,14 +112,6 @@
             this.COMselector = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnHwRefresh = new System.Windows.Forms.Button();
-            this.cbbChannel = new System.Windows.Forms.ComboBox();
-            this.cbbBaudrates = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnRelease = new System.Windows.Forms.Button();
-            this.btnInit = new System.Windows.Forms.Button();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.menuStrip1.SuspendLayout();
             this.tabPage7.SuspendLayout();
@@ -149,10 +126,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox24.SuspendLayout();
-            this.groupBox16.SuspendLayout();
             this.groupBox15.SuspendLayout();
             this.groupBox27.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -188,7 +163,6 @@
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
             this.quitterToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
             this.quitterToolStripMenuItem.Text = "Quitter";
-            this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
             // redémarrerToolStripMenuItem
             // 
@@ -196,14 +170,12 @@
             this.redémarrerToolStripMenuItem.Name = "redémarrerToolStripMenuItem";
             this.redémarrerToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
             this.redémarrerToolStripMenuItem.Text = "Redémarrer";
-            this.redémarrerToolStripMenuItem.Click += new System.EventHandler(this.redémarrerToolStripMenuItem_Click);
             // 
             // àProposToolStripMenuItem
             // 
             this.àProposToolStripMenuItem.Name = "àProposToolStripMenuItem";
             this.àProposToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
             this.àProposToolStripMenuItem.Text = "&À propos";
-            this.àProposToolStripMenuItem.Click += new System.EventHandler(this.àProposToolStripMenuItem_Click);
             // 
             // fileToolStripMenuItem
             // 
@@ -264,7 +236,6 @@
             // timer2
             // 
             this.timer2.Interval = 500;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // timer4RealTimeCAN
             // 
@@ -653,11 +624,11 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.EtatProjet);
+            this.tabPage5.Controls.Add(this.label4);
             this.tabPage5.Controls.Add(this.groupBox17);
             this.tabPage5.Controls.Add(this.groupBox24);
-            this.tabPage5.Controls.Add(this.groupBox16);
             this.tabPage5.Controls.Add(this.groupBox15);
-            this.tabPage5.Controls.Add(this.groupBox1);
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage5.Name = "tabPage5";
@@ -667,27 +638,35 @@
             this.tabPage5.Text = "Contrôle et informations";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // EtatProjet
+            // 
+            this.EtatProjet.AutoSize = true;
+            this.EtatProjet.BackColor = System.Drawing.Color.LightGray;
+            this.EtatProjet.Location = new System.Drawing.Point(645, 69);
+            this.EtatProjet.Name = "EtatProjet";
+            this.EtatProjet.Size = new System.Drawing.Size(0, 17);
+            this.EtatProjet.TabIndex = 63;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(608, 63);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(37, 17);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "État:";
+            // 
             // groupBox17
             // 
-            this.groupBox17.Controls.Add(this.PoidsLabel);
             this.groupBox17.Controls.Add(this.Poltergeist);
             this.groupBox17.Controls.Add(this.label27);
-            this.groupBox17.Controls.Add(this.CANid);
-            this.groupBox17.Controls.Add(this.GhostLabel);
-            this.groupBox17.Controls.Add(this.Range);
             this.groupBox17.Controls.Add(this.label18);
-            this.groupBox17.Controls.Add(this.GhostLabelDeRéception);
-            this.groupBox17.Controls.Add(this.RangedTrame);
             this.groupBox17.Controls.Add(this.lblEtatVehicule);
-            this.groupBox17.Controls.Add(this.label21);
-            this.groupBox17.Controls.Add(this.GhostLabel2);
-            this.groupBox17.Controls.Add(this.lblBattryLevel);
             this.groupBox17.Controls.Add(this.label32);
             this.groupBox17.Controls.Add(this.lblStation);
             this.groupBox17.Controls.Add(this.label31);
-            this.groupBox17.Controls.Add(this.label22);
             this.groupBox17.Controls.Add(this.pictureBox3);
-            this.groupBox17.Controls.Add(this.lblSpeed);
             this.groupBox17.Controls.Add(this.LblPoidBloc);
             this.groupBox17.Controls.Add(this.pictureBox1);
             this.groupBox17.Controls.Add(this.label23);
@@ -702,17 +681,6 @@
             this.groupBox17.TabIndex = 59;
             this.groupBox17.TabStop = false;
             this.groupBox17.Text = "Informations en temps réel";
-            // 
-            // PoidsLabel
-            // 
-            this.PoidsLabel.AutoSize = true;
-            this.PoidsLabel.Location = new System.Drawing.Point(11, 366);
-            this.PoidsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.PoidsLabel.Name = "PoidsLabel";
-            this.PoidsLabel.Size = new System.Drawing.Size(61, 25);
-            this.PoidsLabel.TabIndex = 69;
-            this.PoidsLabel.Text = "Poids";
-            this.PoidsLabel.Visible = false;
             // 
             // Poltergeist
             // 
@@ -735,39 +703,6 @@
             this.label27.TabIndex = 16;
             this.label27.Text = "Station active";
             // 
-            // CANid
-            // 
-            this.CANid.AutoSize = true;
-            this.CANid.Location = new System.Drawing.Point(9, 391);
-            this.CANid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.CANid.Name = "CANid";
-            this.CANid.Size = new System.Drawing.Size(68, 25);
-            this.CANid.TabIndex = 64;
-            this.CANid.Text = "ID can";
-            this.CANid.Visible = false;
-            // 
-            // GhostLabel
-            // 
-            this.GhostLabel.AutoSize = true;
-            this.GhostLabel.Location = new System.Drawing.Point(269, 416);
-            this.GhostLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.GhostLabel.Name = "GhostLabel";
-            this.GhostLabel.Size = new System.Drawing.Size(23, 25);
-            this.GhostLabel.TabIndex = 1;
-            this.GhostLabel.Text = "0";
-            this.GhostLabel.Visible = false;
-            // 
-            // Range
-            // 
-            this.Range.AutoSize = true;
-            this.Range.Location = new System.Drawing.Point(8, 416);
-            this.Range.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Range.Name = "Range";
-            this.Range.Size = new System.Drawing.Size(69, 25);
-            this.Range.TabIndex = 62;
-            this.Range.Text = "Range";
-            this.Range.Visible = false;
-            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -778,30 +713,6 @@
             this.label18.TabIndex = 5;
             this.label18.Text = "État du véhicule";
             // 
-            // GhostLabelDeRéception
-            // 
-            this.GhostLabelDeRéception.AutoSize = true;
-            this.GhostLabelDeRéception.Location = new System.Drawing.Point(8, 465);
-            this.GhostLabelDeRéception.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.GhostLabelDeRéception.Name = "GhostLabelDeRéception";
-            this.GhostLabelDeRéception.Size = new System.Drawing.Size(64, 25);
-            this.GhostLabelDeRéception.TabIndex = 61;
-            this.GhostLabelDeRéception.Text = "Ghost";
-            this.GhostLabelDeRéception.Visible = false;
-            this.GhostLabelDeRéception.TextChanged += new System.EventHandler(this.GhostLabelDeRéception_TextChanged);
-            // 
-            // RangedTrame
-            // 
-            this.RangedTrame.AutoSize = true;
-            this.RangedTrame.Location = new System.Drawing.Point(8, 441);
-            this.RangedTrame.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.RangedTrame.Name = "RangedTrame";
-            this.RangedTrame.Size = new System.Drawing.Size(131, 25);
-            this.RangedTrame.TabIndex = 60;
-            this.RangedTrame.Text = "RangedValue";
-            this.RangedTrame.Visible = false;
-            this.RangedTrame.TextChanged += new System.EventHandler(this.RangedTrame_TextChanged);
-            // 
             // lblEtatVehicule
             // 
             this.lblEtatVehicule.AutoSize = true;
@@ -811,40 +722,6 @@
             this.lblEtatVehicule.Size = new System.Drawing.Size(77, 25);
             this.lblEtatVehicule.TabIndex = 6;
             this.lblEtatVehicule.Text = "no data";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(11, 288);
-            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(78, 25);
-            this.label21.TabIndex = 8;
-            this.label21.Text = "Batterie";
-            this.label21.Visible = false;
-            // 
-            // GhostLabel2
-            // 
-            this.GhostLabel2.AutoSize = true;
-            this.GhostLabel2.Location = new System.Drawing.Point(269, 391);
-            this.GhostLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.GhostLabel2.Name = "GhostLabel2";
-            this.GhostLabel2.Size = new System.Drawing.Size(23, 25);
-            this.GhostLabel2.TabIndex = 63;
-            this.GhostLabel2.Text = "0";
-            this.GhostLabel2.Visible = false;
-            // 
-            // lblBattryLevel
-            // 
-            this.lblBattryLevel.AutoSize = true;
-            this.lblBattryLevel.Location = new System.Drawing.Point(208, 288);
-            this.lblBattryLevel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblBattryLevel.Name = "lblBattryLevel";
-            this.lblBattryLevel.Size = new System.Drawing.Size(77, 25);
-            this.lblBattryLevel.TabIndex = 9;
-            this.lblBattryLevel.Text = "no data";
-            this.lblBattryLevel.Visible = false;
-            this.lblBattryLevel.Click += new System.EventHandler(this.lblBattryLevel_Click);
             // 
             // label32
             // 
@@ -876,17 +753,6 @@
             this.label31.TabIndex = 58;
             this.label31.Text = "Type de bloc:";
             // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(11, 263);
-            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(77, 25);
-            this.label22.TabIndex = 10;
-            this.label22.Text = "Vitesse";
-            this.label22.Visible = false;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::PCANBasicExample.Properties.Resources.NO;
@@ -898,27 +764,16 @@
             this.pictureBox3.TabIndex = 21;
             this.pictureBox3.TabStop = false;
             // 
-            // lblSpeed
-            // 
-            this.lblSpeed.AutoSize = true;
-            this.lblSpeed.Location = new System.Drawing.Point(209, 263);
-            this.lblSpeed.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblSpeed.Name = "lblSpeed";
-            this.lblSpeed.Size = new System.Drawing.Size(77, 25);
-            this.lblSpeed.TabIndex = 11;
-            this.lblSpeed.Text = "no data";
-            this.lblSpeed.Visible = false;
-            // 
             // LblPoidBloc
             // 
             this.LblPoidBloc.AutoSize = true;
-            this.LblPoidBloc.Location = new System.Drawing.Point(211, 239);
+            this.LblPoidBloc.Location = new System.Drawing.Point(214, 171);
             this.LblPoidBloc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblPoidBloc.Name = "LblPoidBloc";
             this.LblPoidBloc.Size = new System.Drawing.Size(23, 25);
             this.LblPoidBloc.TabIndex = 15;
-            this.LblPoidBloc.Text = "?";
-            this.LblPoidBloc.Click += new System.EventHandler(this.LblPoidBloc_Click);
+            this.LblPoidBloc.Text = "0";
+            this.LblPoidBloc.UseMnemonic = false;
             // 
             // pictureBox1
             // 
@@ -934,7 +789,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(12, 214);
+            this.label23.Location = new System.Drawing.Point(11, 146);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(149, 25);
@@ -944,7 +799,7 @@
             // lblBlocColor
             // 
             this.lblBlocColor.AutoSize = true;
-            this.lblBlocColor.Location = new System.Drawing.Point(208, 214);
+            this.lblBlocColor.Location = new System.Drawing.Point(211, 146);
             this.lblBlocColor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBlocColor.Name = "lblBlocColor";
             this.lblBlocColor.Size = new System.Drawing.Size(77, 25);
@@ -954,7 +809,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(12, 239);
+            this.label26.Location = new System.Drawing.Point(15, 171);
             this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(119, 25);
@@ -963,107 +818,41 @@
             // 
             // groupBox24
             // 
-            this.groupBox24.Controls.Add(this.button4);
-            this.groupBox24.Controls.Add(this.VoitureStop);
-            this.groupBox24.Controls.Add(this.VoitureStart);
-            this.groupBox24.Location = new System.Drawing.Point(895, 8);
+            this.groupBox24.Controls.Add(this.BoutonStop);
+            this.groupBox24.Controls.Add(this.BoutonStart);
+            this.groupBox24.Location = new System.Drawing.Point(361, 9);
             this.groupBox24.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox24.Name = "groupBox24";
             this.groupBox24.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox24.Size = new System.Drawing.Size(225, 117);
             this.groupBox24.TabIndex = 62;
             this.groupBox24.TabStop = false;
-            this.groupBox24.Text = "Véhicule";
+            this.groupBox24.Text = "Projet";
             // 
-            // button4
+            // BoutonStop
             // 
-            this.button4.BackgroundImage = global::PCANBasicExample.Properties.Resources.Image1;
-            this.button4.Location = new System.Drawing.Point(8, 69);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(208, 28);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Activer table FESTO";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.BoutonStop.BackColor = System.Drawing.Color.White;
+            this.BoutonStop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BoutonStop.BackgroundImage")));
+            this.BoutonStop.Location = new System.Drawing.Point(8, 54);
+            this.BoutonStop.Margin = new System.Windows.Forms.Padding(4);
+            this.BoutonStop.Name = "BoutonStop";
+            this.BoutonStop.Size = new System.Drawing.Size(209, 28);
+            this.BoutonStop.TabIndex = 0;
+            this.BoutonStop.Text = "Stop";
+            this.BoutonStop.UseVisualStyleBackColor = false;
+            this.BoutonStop.Click += new System.EventHandler(this.BoutonStop_Click);
             // 
-            // VoitureStop
+            // BoutonStart
             // 
-            this.VoitureStop.BackColor = System.Drawing.Color.White;
-            this.VoitureStop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("VoitureStop.BackgroundImage")));
-            this.VoitureStop.Location = new System.Drawing.Point(116, 27);
-            this.VoitureStop.Margin = new System.Windows.Forms.Padding(4);
-            this.VoitureStop.Name = "VoitureStop";
-            this.VoitureStop.Size = new System.Drawing.Size(100, 28);
-            this.VoitureStop.TabIndex = 0;
-            this.VoitureStop.Text = "Stop";
-            this.VoitureStop.UseVisualStyleBackColor = false;
-            // 
-            // VoitureStart
-            // 
-            this.VoitureStart.BackgroundImage = global::PCANBasicExample.Properties.Resources.Image1;
-            this.VoitureStart.Location = new System.Drawing.Point(8, 27);
-            this.VoitureStart.Margin = new System.Windows.Forms.Padding(4);
-            this.VoitureStart.Name = "VoitureStart";
-            this.VoitureStart.Size = new System.Drawing.Size(100, 28);
-            this.VoitureStart.TabIndex = 1;
-            this.VoitureStart.Text = "Start";
-            this.VoitureStart.UseVisualStyleBackColor = true;
-            // 
-            // groupBox16
-            // 
-            this.groupBox16.Controls.Add(this.HeartBeatOUT);
-            this.groupBox16.Controls.Add(this.HeartBeatIN);
-            this.groupBox16.Controls.Add(this.label17);
-            this.groupBox16.Controls.Add(this.label16);
-            this.groupBox16.Location = new System.Drawing.Point(705, 7);
-            this.groupBox16.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox16.Size = new System.Drawing.Size(167, 118);
-            this.groupBox16.TabIndex = 58;
-            this.groupBox16.TabStop = false;
-            this.groupBox16.Text = "HeartBeat";
-            // 
-            // HeartBeatOUT
-            // 
-            this.HeartBeatOUT.BackColor = System.Drawing.Color.White;
-            this.HeartBeatOUT.Location = new System.Drawing.Point(84, 69);
-            this.HeartBeatOUT.Margin = new System.Windows.Forms.Padding(4);
-            this.HeartBeatOUT.Name = "HeartBeatOUT";
-            this.HeartBeatOUT.Size = new System.Drawing.Size(75, 34);
-            this.HeartBeatOUT.TabIndex = 15;
-            this.HeartBeatOUT.UseVisualStyleBackColor = false;
-            // 
-            // HeartBeatIN
-            // 
-            this.HeartBeatIN.BackColor = System.Drawing.Color.White;
-            this.HeartBeatIN.Location = new System.Drawing.Point(84, 23);
-            this.HeartBeatIN.Margin = new System.Windows.Forms.Padding(4);
-            this.HeartBeatIN.Name = "HeartBeatIN";
-            this.HeartBeatIN.Size = new System.Drawing.Size(75, 34);
-            this.HeartBeatIN.TabIndex = 14;
-            this.HeartBeatIN.UseVisualStyleBackColor = false;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(8, 81);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(66, 17);
-            this.label17.TabIndex = 13;
-            this.label17.Text = "Transmis";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(8, 30);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(41, 17);
-            this.label16.TabIndex = 13;
-            this.label16.Text = "Reçu";
+            this.BoutonStart.BackgroundImage = global::PCANBasicExample.Properties.Resources.Image1;
+            this.BoutonStart.Location = new System.Drawing.Point(8, 18);
+            this.BoutonStart.Margin = new System.Windows.Forms.Padding(4);
+            this.BoutonStart.Name = "BoutonStart";
+            this.BoutonStart.Size = new System.Drawing.Size(209, 28);
+            this.BoutonStart.TabIndex = 1;
+            this.BoutonStart.Text = "Start";
+            this.BoutonStart.UseVisualStyleBackColor = true;
+            this.BoutonStart.Click += new System.EventHandler(this.BoutonStart_Click);
             // 
             // groupBox15
             // 
@@ -1073,7 +862,7 @@
             this.groupBox15.Controls.Add(this.COMselector);
             this.groupBox15.Controls.Add(this.label14);
             this.groupBox15.Controls.Add(this.label15);
-            this.groupBox15.Location = new System.Drawing.Point(372, 7);
+            this.groupBox15.Location = new System.Drawing.Point(9, 8);
             this.groupBox15.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox15.Name = "groupBox15";
             this.groupBox15.Padding = new System.Windows.Forms.Padding(4);
@@ -1206,163 +995,6 @@
             this.label15.TabIndex = 3;
             this.label15.Text = "Port";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.btnHwRefresh);
-            this.groupBox1.Controls.Add(this.cbbChannel);
-            this.groupBox1.Controls.Add(this.cbbBaudrates);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.btnRelease);
-            this.groupBox1.Controls.Add(this.btnInit);
-            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.groupBox1.Location = new System.Drawing.Point(4, 7);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(360, 118);
-            this.groupBox1.TabIndex = 42;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = " Connection au bus CAN ";
-            // 
-            // btnHwRefresh
-            // 
-            this.btnHwRefresh.BackColor = System.Drawing.Color.Transparent;
-            this.btnHwRefresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHwRefresh.BackgroundImage")));
-            this.btnHwRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnHwRefresh.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnHwRefresh.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnHwRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnHwRefresh.Image")));
-            this.btnHwRefresh.Location = new System.Drawing.Point(235, 74);
-            this.btnHwRefresh.Margin = new System.Windows.Forms.Padding(4);
-            this.btnHwRefresh.Name = "btnHwRefresh";
-            this.btnHwRefresh.Size = new System.Drawing.Size(105, 28);
-            this.btnHwRefresh.TabIndex = 45;
-            this.btnHwRefresh.Text = "Refresh";
-            this.btnHwRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.btnHwRefresh.UseVisualStyleBackColor = true;
-            // 
-            // cbbChannel
-            // 
-            this.cbbChannel.BackColor = System.Drawing.Color.White;
-            this.cbbChannel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbChannel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbChannel.Items.AddRange(new object[] {
-            "None",
-            "DNG-Channel 1",
-            "ISA-Channel 1",
-            "ISA-Channel 2",
-            "ISA-Channel 3",
-            "ISA-Channel 4",
-            "ISA-Channel 5",
-            "ISA-Channel 6",
-            "ISA-Channel 7",
-            "ISA-Channel 8",
-            "PCC-Channel 1",
-            "PCC-Channel 2",
-            "PCI-Channel 1",
-            "PCI-Channel 2",
-            "PCI-Channel 3",
-            "PCI-Channel 4",
-            "PCI-Channel 5",
-            "PCI-Channel 6",
-            "PCI-Channel 7",
-            "PCI-Channel 8",
-            "USB-Channel 1",
-            "USB-Channel 2",
-            "USB-Channel 3",
-            "USB-Channel 4",
-            "USB-Channel 5",
-            "USB-Channel 6",
-            "USB-Channel 7",
-            "USB-Channel 8"});
-            this.cbbChannel.Location = new System.Drawing.Point(8, 39);
-            this.cbbChannel.Margin = new System.Windows.Forms.Padding(4);
-            this.cbbChannel.Name = "cbbChannel";
-            this.cbbChannel.Size = new System.Drawing.Size(157, 25);
-            this.cbbChannel.TabIndex = 32;
-            // 
-            // cbbBaudrates
-            // 
-            this.cbbBaudrates.BackColor = System.Drawing.Color.White;
-            this.cbbBaudrates.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbBaudrates.Items.AddRange(new object[] {
-            "1 MBit/sec",
-            "800 kBit/s",
-            "500 kBit/sec",
-            "250 kBit/sec",
-            "125 kBit/sec",
-            "100 kBit/sec",
-            "95,238 kBit/s",
-            "83,333 kBit/s",
-            "50 kBit/sec",
-            "47,619 kBit/s",
-            "33,333 kBit/s",
-            "20 kBit/sec",
-            "10 kBit/sec",
-            "5 kBit/sec"});
-            this.cbbBaudrates.Location = new System.Drawing.Point(180, 39);
-            this.cbbBaudrates.Margin = new System.Windows.Forms.Padding(4);
-            this.cbbBaudrates.Name = "cbbBaudrates";
-            this.cbbBaudrates.Size = new System.Drawing.Size(159, 24);
-            this.cbbBaudrates.TabIndex = 36;
-            // 
-            // label2
-            // 
-            this.label2.Location = new System.Drawing.Point(175, 21);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 28);
-            this.label2.TabIndex = 41;
-            this.label2.Text = "Baudrate";
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(7, 21);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 28);
-            this.label1.TabIndex = 40;
-            this.label1.Text = "Choix du Channel";
-            // 
-            // btnRelease
-            // 
-            this.btnRelease.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRelease.BackColor = System.Drawing.Color.Transparent;
-            this.btnRelease.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRelease.BackgroundImage")));
-            this.btnRelease.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRelease.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnRelease.Enabled = false;
-            this.btnRelease.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnRelease.Image = ((System.Drawing.Image)(resources.GetObject("btnRelease.Image")));
-            this.btnRelease.Location = new System.Drawing.Point(121, 74);
-            this.btnRelease.Margin = new System.Windows.Forms.Padding(4);
-            this.btnRelease.Name = "btnRelease";
-            this.btnRelease.Size = new System.Drawing.Size(105, 28);
-            this.btnRelease.TabIndex = 35;
-            this.btnRelease.Text = "Déconnexion";
-            this.btnRelease.UseVisualStyleBackColor = false;
-            // 
-            // btnInit
-            // 
-            this.btnInit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnInit.BackColor = System.Drawing.Color.Transparent;
-            this.btnInit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInit.BackgroundImage")));
-            this.btnInit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnInit.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnInit.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnInit.Image = ((System.Drawing.Image)(resources.GetObject("btnInit.Image")));
-            this.btnInit.Location = new System.Drawing.Point(8, 74);
-            this.btnInit.Margin = new System.Windows.Forms.Padding(4);
-            this.btnInit.Name = "btnInit";
-            this.btnInit.Size = new System.Drawing.Size(105, 28);
-            this.btnInit.TabIndex = 34;
-            this.btnInit.Text = "Connexion";
-            this.btnInit.UseVisualStyleBackColor = false;
-            // 
             // tabControl2
             // 
             this.tabControl2.Controls.Add(this.tabPage5);
@@ -1407,18 +1039,16 @@
             this.groupBox19.ResumeLayout(false);
             this.groupBox19.PerformLayout();
             this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.groupBox17.ResumeLayout(false);
             this.groupBox17.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox24.ResumeLayout(false);
-            this.groupBox16.ResumeLayout(false);
-            this.groupBox16.PerformLayout();
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
             this.groupBox27.ResumeLayout(false);
             this.groupBox27.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1479,39 +1109,22 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.GroupBox groupBox17;
-        private System.Windows.Forms.Label PoidsLabel;
         private System.Windows.Forms.Label Poltergeist;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label CANid;
-        private System.Windows.Forms.Label GhostLabel;
-        private System.Windows.Forms.Label Range;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label GhostLabelDeRéception;
-        private System.Windows.Forms.Label RangedTrame;
         private System.Windows.Forms.Label lblEtatVehicule;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label GhostLabel2;
-        private System.Windows.Forms.Label lblBattryLevel;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label lblStation;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label22;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label lblSpeed;
         private System.Windows.Forms.Label LblPoidBloc;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label lblBlocColor;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.GroupBox groupBox24;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button VoitureStop;
-        private System.Windows.Forms.Button VoitureStart;
-        private System.Windows.Forms.GroupBox groupBox16;
-        private System.Windows.Forms.Button HeartBeatOUT;
-        private System.Windows.Forms.Button HeartBeatIN;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button BoutonStop;
+        private System.Windows.Forms.Button BoutonStart;
         private System.Windows.Forms.GroupBox groupBox15;
         private System.Windows.Forms.Button Connexion;
         private System.Windows.Forms.GroupBox groupBox27;
@@ -1523,15 +1136,9 @@
         private System.Windows.Forms.ComboBox COMselector;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnHwRefresh;
-        private System.Windows.Forms.ComboBox cbbChannel;
-        private System.Windows.Forms.ComboBox cbbBaudrates;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnRelease;
-        private System.Windows.Forms.Button btnInit;
         private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label EtatProjet;
         // private System.Windows.Forms.Label GhostLabelDeRéceptionLabeldeTest;
         //private System.Windows.Forms.Label GhostLabelDeRéceptionTestLabel;
     }
