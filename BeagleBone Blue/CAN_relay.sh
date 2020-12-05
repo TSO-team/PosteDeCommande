@@ -21,7 +21,7 @@ RED_LED=/sys/class/leds/red
 MOTOR_STATE='01'
 
 # Ensure kernel modules are loaded.
-modprobe vcan
+modprobe can can_bcm vcan
 
 # Set green LED to persistent mode.
 echo 'none' > $GREEN_LED/trigger
@@ -131,7 +131,7 @@ do
     # Read from standard input with 8 second timeout.
     read -t 8 -r SYNC
 
-    if [[ $? -gt 128 ]]
+    if [[ $? -gt 127 ]]
     then
         echo "SYNC timeout!"
         break
