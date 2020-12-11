@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Program:       CAN_relay.sh
 # Creator:       Samuel Duclos
 # Comments:      This file is directly invoked using source.
@@ -10,7 +11,8 @@
 # Modifiable variables.
 INTERFACE_TYPE=can
 BITRATE=50000
-DELAY_US=84000
+DELAY_SEC=0.02
+DELAY_US=20000
 
 # Non-modifiable variables.
 INTERFACE=$INTERFACE_TYPE'0'
@@ -18,7 +20,6 @@ BITRATE='bitrate '$BITRATE
 SOCKET=/dev/tcp/127.0.0.1/28600
 GREEN_LED=/sys/class/leds/green
 RED_LED=/sys/class/leds/red
-MOTOR_STATE='01'
 
 # Ensure kernel modules are loaded.
 modprobe can can_bcm vcan
@@ -68,7 +69,7 @@ exec {FILE_DESCRIPTOR}<>$SOCKET
 
 function destroy {
     # Be nice and kill all nodes.
-    echo "<${INTERFACE} U 0 0 001 1 00>" >&$FILE_DESCRIPTOR # Send power off command.
+    echo "<${INTERFACE} U 0 0 001 2 00 00>" >&$FILE_DESCRIPTOR # Send power off command.
     sleep 0.5
 
     # Kill server.
@@ -94,13 +95,14 @@ trap destroy SIGHUP
 # Send commands to server through file descriptor to socket:
 
 # < INTERFACE ADD_CYCLE DELAY_SEC DELAY_US HEX_ADDRESS N_BYTES SPACE_SEPARATED_HEX_BYTES >
-echo "<${INTERFACE} A 0 ${DELAY_US} 001 1 01>" >&$FILE_DESCRIPTOR
+echo "<${INTERFACE} A 0 ${DELAY_US} 001 2 20 00>" >&$FILE_DESCRIPTOR
 sleep 0.5
 
 # < INTERFACE RECEIVE_FROM DELAY_SEC DELAY_US HEX_ADDRESS N_BYTES FILTER >
-echo "<${INTERFACE} R 0 0 001 1 FF>" >&$FILE_DESCRIPTOR
-echo "<${INTERFACE} R 0 0 002 1 FF>" >&$FILE_DESCRIPTOR
-echo "<${INTERFACE} R 0 0 003 1 FF>" >&$FILE_DESCRIPTOR
+echo "<${INTERFACE} R 0 0 001 2 FF>" >&$FILE_DESCRIPTOR
+echo "<${INTERFACE} R 0 0 002 2 FF>" >&$FILE_DESCRIPTOR
+echo "<${INTERFACE} R 0 0 003 2 FF>" >&$FILE_DESCRIPTOR
+echo "<${INTERFACE} R 0 0 004 2 FF>" >&$FILE_DESCRIPTOR
 sleep 0.5
 
 # Main loop.
@@ -114,24 +116,10 @@ do
       echo "$CAN_INPUT"
     fi
 
-    if [ "$CAN_INPUT" == "< ${INTERFACE} 003 1 03 >" ] && \
-       [ "$MOTOR_STATE" == '01' ]
-    then
-        MOTOR_STATE='03'
-        echo "<${INTERFACE} U 0 ${DELAY_US} 001 1 03>" >&$FILE_DESCRIPTOR
-    fi
-
-    if [ "$CAN_INPUT" == "< ${INTERFACE} 003 1 01 >" ] && \
-       [ "$MOTOR_STATE" == '03' ]
-    then
-        MOTOR_STATE='01'
-        echo "<${INTERFACE} U 0 ${DELAY_US} 001 1 01>" >&$FILE_DESCRIPTOR
-    fi
-
     # Read from standard input with 8 second timeout.
-    read -t 8 -r SYNC
+    read -t $DELAY_SEC -r SYNC
 
-    if [[ $? -gt 127 ]]
+    if [[ $? -gt 128 ]]
     then
         echo "SYNC timeout!"
         break
@@ -146,8 +134,8 @@ do
         break
 
     else
-        echo 'Ill command received from computer.'
-        break
+        # < INTERFACE ADD_CYCLE DELAY_SEC DELAY_US HEX_ADDRESS N_BYTES SPACE_SEPARATED_HEX_BYTES >
+        echo "<${INTERFACE} U 0 ${DELAY_US} 001 2 ${SYNC}>" >&$FILE_DESCRIPTOR
     fi
 
 done
