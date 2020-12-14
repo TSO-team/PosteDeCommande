@@ -76,23 +76,3 @@ C:\TEMP\github\Projet-de-5e-Session\Csharp\Programme\obj\Debug\PCANBasicExample.
 C:\TEMP\github\Projet-de-5e-Session\Csharp\Programme\obj\Debug\PCANBasicExample.csproj.CoreCompileInputs.cache
 C:\TEMP\github\Projet-de-5e-Session\Csharp\Programme\obj\Debug\CAN Opener.exe
 C:\TEMP\github\Projet-de-5e-Session\Csharp\Programme\obj\Debug\CAN Opener.pdb
-C:\Users\alexv\OneDrive\Bureau\PosteDeCommande-main\bin\Debug\CAN Opener.exe.config
-C:\Users\alexv\OneDrive\Bureau\PosteDeCommande-main\bin\Debug\CAN Opener.exe
-C:\Users\alexv\OneDrive\Bureau\PosteDeCommande-main\bin\Debug\CAN Opener.pdb
-C:\Users\alexv\OneDrive\Bureau\PosteDeCommande-main\obj\Debug\PCANBasicExample.csprojAssemblyReference.cache
-C:\Users\alexv\OneDrive\Bureau\PosteDeCommande-main\obj\Debug\ICDIBasic.Form1.resources
-C:\Users\alexv\OneDrive\Bureau\PosteDeCommande-main\obj\Debug\PCANBasicExample.Properties.Resources.resources
-C:\Users\alexv\OneDrive\Bureau\PosteDeCommande-main\obj\Debug\PCANBasicExample.csproj.GenerateResource.cache
-C:\Users\alexv\OneDrive\Bureau\PosteDeCommande-main\obj\Debug\PCANBasicExample.csproj.CoreCompileInputs.cache
-C:\Users\alexv\OneDrive\Bureau\PosteDeCommande-main\obj\Debug\CAN Opener.exe
-C:\Users\alexv\OneDrive\Bureau\PosteDeCommande-main\obj\Debug\CAN Opener.pdb
-C:\Projet5session\PosteDeCommande-main\obj\Debug\PCANBasicExample.csprojAssemblyReference.cache
-C:\Projet5session\PosteDeCommande-main\obj\Debug\CAN Opener.exe
-C:\Projet5session\PosteDeCommande-main\obj\Debug\CAN Opener.pdb
-C:\Projet5session\PosteDeCommande-main\bin\Debug\CAN Opener.exe.config
-C:\Projet5session\PosteDeCommande-main\bin\Debug\CAN Opener.exe
-C:\Projet5session\PosteDeCommande-main\bin\Debug\CAN Opener.pdb
-C:\Projet5session\PosteDeCommande-main\obj\Debug\ICDIBasic.Form1.resources
-C:\Projet5session\PosteDeCommande-main\obj\Debug\PCANBasicExample.Properties.Resources.resources
-C:\Projet5session\PosteDeCommande-main\obj\Debug\PCANBasicExample.csproj.GenerateResource.cache
-C:\Projet5session\PosteDeCommande-main\obj\Debug\PCANBasicExample.csproj.CoreCompileInputs.cache
